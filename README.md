@@ -1,11 +1,22 @@
-For modifying setup:
+For Windows with AutoHotkey:
+
 - run the setup exe if AutoHotkey is not already installed
-- place this repo's root folder in the AutoHotkey folder
-- compile and run the .ahk file
+- run eng_to_orkz.ahk, or compile it and run the .exe
 
-For standalone setup:
-- extract the zipped file
-- run the .exe
+For standalone Windows setup:
 
-The process can be paused/stopped by right-clicking the hidden icon for it on your taskbar (Windows).
-.txt file must be in same directory as executable.
+- extract standalone_exe.zip
+- run eng_to_orkz.exe
+
+For Linux setup:
+
+- run these commands from this folder
+- run `python3 -m venv .venv`
+- run `.venv/bin/pip install pynput`
+- run `.venv/bin/python eng_to_orkz.py`
+
+Keep eng_to_orkz.txt in the same folder as the script or .exe.
+
+On Windows, right-click the AutoHotkey icon in the system tray to pause or stop it.
+
+On Linux, press Ctrl+C in the terminal to stop it.
